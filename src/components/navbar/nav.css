@@ -1,0 +1,118 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.nav {
+  height: calc(var(--nav-width) + 2.4rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 1.6rem;
+}
+
+.nav__logo,
+.nav__toggle {
+  color: var(--title-color);
+  font-weight: var(--font-weight-b);
+}
+
+.nav-content-layout {
+  display: flex;
+  column-gap: 2rem;
+}
+
+.nav__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: var(--large);
+  color: var(--title-color);
+  font-weight: var(--font-weight-m);
+  transition: 0.3s;
+}
+
+.nav__icon,
+.nav__close,
+.nav__toggle {
+  display: none;
+}
+
+.nav__link:hover {
+  color: orange;
+}
+
+/* Screen layout for cellular phones */
+@media screen and (max-width: 430px) {
+  .header {
+    /* overrides the top position of the header and places it at bottom of screen */
+    top: initial;
+    bottom: 0;
+  }
+
+  .nav {
+    height: var(--nav-width);
+  }
+
+  .nav-content {
+    position: fixed;
+    /* hides the navbar until user clicks the apps icon */
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: var(--body-color);
+    padding: 2.2rem 2rem 4rem;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+  }
+
+  /* shows the menu when user clicks the app icon in top right */
+  .show-menu {
+    bottom: 0;
+  }
+
+  .nav__toggle {
+    font-size: 1.7rem;
+  }
+
+  .nav-content-layout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .nav__icon {
+    font-size: 1.9rem;
+  }
+
+  .nav__close {
+    position: absolute;
+    right: 1.3rem;
+    bottom: 0.8rem;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: var(--title-color);
+  }
+
+  .nav__close:hover {
+    color: var(--title-color-dark);
+  }
+
+  .nav__toggle {
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .nav__icon,
+  .nav__close,
+  .nav__toggle {
+    display: block;
+  }
+}
+
+/* Screen layout for cellular phones */

@@ -1,0 +1,55 @@
+.footer {
+    background-color: var(--container-color);
+    border-top: 1px solid #000;
+}
+
+.footer-links {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container {
+    padding: 3.2rem 0 4rem;
+}
+
+.footer-title,
+.footer-link {
+    color: var(--title-color);
+}
+
+.footer-title {
+    text-align: center;
+    margin-bottom: var(--mb-3);
+
+}
+
+.footer-link:hover {
+    color: orangered;
+    transition: 0.3s;
+
+}
+
+.footer-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-copy {
+    display: block;
+    color: var(--title-color);
+    text-align: center;
+    font-size: var(--small);
+    padding-top: 1rem;
+}
+
+.Dot {
+    color: orange;
+    font-size: 2rem;
+}
