@@ -14,13 +14,13 @@ const Contact = () => {
                             <div className="contact-card">
                                 <EnvelopeAtFill className='contact-card-icon' />
                                 <h3 className="contact-card-title">Email</h3>
-                                <span className="contact-card-data">nikolaspreyes@gmail.com</span>
+                                <span className="contact-card-data">placeholder@gmail.com</span>
                             </div>
 
                             <div className="contact-card">
                                 <TelephoneFill className='contact-card-icon' />
                                 <h3 className="contact-card-title">Cellphone</h3>
-                                <span className="contact-card-data">949-540-8784</span>
+                                <span className="contact-card-data">XXX-XXX-XXXX</span>
                             </div>
                         </div>
                     </div>
