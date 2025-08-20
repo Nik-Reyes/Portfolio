@@ -1,5 +1,5 @@
-import React from 'react'
-import "./App.css";
+import React from 'react';
+import './App.css';
 import Nav from './components/navbar/Nav';
 import Contact from './components/contact/Contact';
 import Content from './components/content/Content';
@@ -7,21 +7,21 @@ import About from './components/about/About';
 import Footer from './components/footer/Footer';
 
 const App = () => {
-    return (
-        <>
-            <Nav />
+	return (
+		<>
+			<Nav />
 
-            <main className='main'>
-                <Content />
+			<main className='main'>
+				<Content />
 
-                <About />
+				<About />
 
-                <Contact />
+				<Contact />
 
-                <Footer />
-            </main>
-        </>
-    )
-}
+				<Footer />
+			</main>
+		</>
+	);
+};
 
-export default App
+export default App;

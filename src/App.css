@@ -1,186 +1,185 @@
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500&display=swap');
 
 :root {
-  /* font stylization */
-  font-size: 62.5%;
-  --font-type: "M PLUS 1p", sans-serif;
-  --title-color: #333333;
-  --title-color-dark: black;
-  --text-color: #767676;
-  --body-color: #fafafa;
-  --container-color: white;
-  --font-weight-n: 300;
-  --font-weight-m: 400;
-  --font-weight-b: 500;
-  --x-small: 1rem;
-  --small: 1.3rem;
-  --medium: 1.4rem;
-  --large: 1.6rem;
-  --x-large: 5.6rem;
-  --h1-size: 3.6rem;
-  --h2-size: 2.4rem;
-  --h3-size: 2rem;
-  /* font stylization */
+	/* font stylization */
+	font-size: 62.5%;
+	--font-type: 'M PLUS 1p', sans-serif;
+	--title-color: #333333;
+	--title-color-dark: black;
+	--text-color: #767676;
+	--body-color: #fafafa;
+	--container-color: white;
+	--font-weight-n: 300;
+	--font-weight-m: 400;
+	--font-weight-b: 500;
+	--x-small: 1rem;
+	--small: 1.3rem;
+	--medium: 1.4rem;
+	--large: 1.6rem;
+	--x-large: 5.6rem;
+	--h1-size: 3.6rem;
+	--h2-size: 2.4rem;
+	--h3-size: 2rem;
+	/* font stylization */
 
-  --nav-width: 4.8rem;
-  --page-color: #ffffff;
-  --base-bgColor: #ffffff;
+	--nav-width: 4.8rem;
+	--page-color: #ffffff;
+	--base-bgColor: #ffffff;
 
-  /* margins */
-  --mb-1: 0.4rem;
-  --mb-2: 0.8rem;
-  --mb-3: 1.2rem;
-  --mb-4: 1.6rem;
-  --mb-5: 2.4rem;
-  --mb-6: 3.2rem;
-  --mb-7: 4rem;
-  --mb-8: 4.8rem;
-  /* bottom margins */
+	/* margins */
+	--mb-1: 0.4rem;
+	--mb-2: 0.8rem;
+	--mb-3: 1.2rem;
+	--mb-4: 1.6rem;
+	--mb-5: 2.4rem;
+	--mb-6: 3.2rem;
+	--mb-7: 4rem;
+	--mb-8: 4.8rem;
+	/* bottom margins */
 
-  --z-tooltip: 10;
-  --z-fixed: 100;
-  --z-modal: 1000;
+	--z-tooltip: 10;
+	--z-fixed: 100;
+	--z-modal: 1000;
 
-  /* typography */
-  @media screen and (max-width: 992px) {
-    :root {
-      --x-large: 4.4rem;
-      --h1-size: 2.4rem;
-      --h2-size: 2rem;
-      --h3-size: 1.6rem;
-      --small: 1.2rem;
-      --medium: 1.3rem;
-      --large: 1.5rem;
-    }
-  }
+	/* typography */
+	@media screen and (max-width: 992px) {
+		:root {
+			--x-large: 4.4rem;
+			--h1-size: 2.4rem;
+			--h2-size: 2rem;
+			--h3-size: 1.6rem;
+			--small: 1.2rem;
+			--medium: 1.3rem;
+			--large: 1.5rem;
+		}
+	}
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body,
 button,
 input,
 textarea {
-  font-family: var(--font-type);
-  font-size: var(--large);
+	font-family: var(--font-type);
+	font-size: var(--large);
 }
 
 body {
-  background-color: var(--body-color);
-  color: var(--text-color);
+	background-color: var(--body-color);
+	color: var(--text-color);
 }
 
 h1,
 h2,
 h3 {
-  color: var(--title-color);
-  font-weight: var(--font-weight-b);
+	color: var(--title-color);
+	font-weight: var(--font-weight-b);
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 button {
-  cursor: pointer;
-  border: none;
-  outline: none;
+	cursor: pointer;
+	border: none;
+	outline: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .section {
-  padding: 9.6rem 0 3.2rem;
+	padding: 9.6rem 0 3.2rem;
 }
 
 .section-title {
-  font-size: var(--h1-size);
-  color: var(--title-color);
+	font-size: var(--h1-size);
+	color: var(--title-color);
 }
 
 .section-subtitle {
-  display: block;
-  font-size: var(--medium);
-  margin-bottom: 6.4rem;
+	display: block;
+	font-size: var(--medium);
+	margin-bottom: 6.4rem;
 }
 
 .section-title,
 .section-subtitle {
-  text-align: center;
+	text-align: center;
 }
 
 .container {
-  max-width: 96.8rem;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 96.8rem;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .grid {
-  display: grid;
-  gap: 2.4rem;
+	display: grid;
+	gap: 2.4rem;
 }
 
 .button {
-  display: inline-block;
-  background-color: var(--title-color);
-  color: var(--container-color);
-  padding: 2rem 3.2rem;
-  border-radius: 1.6rem;
-  font-weight: var(--font-weight-m);
+	display: inline-block;
+	background-color: var(--title-color);
+	color: var(--container-color);
+	padding: 2rem 3.2rem;
+	border-radius: 1.6rem;
+	font-weight: var(--font-weight-m);
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+	background-color: var(--title-color-dark);
 }
 
 .button-icon {
-  margin-left: var(--mb-2);
+	margin-left: var(--mb-2);
 }
 
 .button--flex {
-  display: inline-flex;
-  align-items: center;
+	display: inline-flex;
+	align-items: center;
 }
 
-
-
 @media screen and (max-width: 992px) {
-  .container {
-    margin-left: var(--mb-5);
-    margin-right: var(--mb-5);
-  }
+	.container {
+		margin-left: var(--mb-5);
+		margin-right: var(--mb-5);
+	}
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    margin: 0 0 4.8rem 0;
-  }
+	body {
+		margin: 0 0 4.8rem 0;
+	}
 
-  .section {
-    padding: 3.2rem 0 6.4rem;
-  }
+	.section {
+		padding: 3.2rem 0 6.4rem;
+	}
 }
 
-@media screen and (max-width: 576px) {}
+@media screen and (max-width: 576px) {
+}
 
 @media screen and (max-width: 430px) {
-  .container {
-    margin-left: var(--mb-4);
-    margin-right: var(--mb-4);
-  }
+	.container {
+		margin-left: var(--mb-4);
+		margin-right: var(--mb-4);
+	}
 }
