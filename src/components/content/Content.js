@@ -2,7 +2,6 @@ import React from 'react';
 import './content.css';
 import Social from './Social';
 import Data from './Data';
-import Scroll from './Scroll';
 
 const Content = () => {
 	return (
@@ -13,7 +12,6 @@ const Content = () => {
 					<div className='home-img'> </div>
 					<Data />
 				</div>
-				<Scroll />
 			</div>
 		</section>
 	);

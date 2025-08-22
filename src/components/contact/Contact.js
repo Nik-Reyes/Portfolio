@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.css';
-import { ArrowRightShort, PersonRaisedHand, EnvelopeAtFill, TelephoneFill } from 'react-bootstrap-icons';
+import { EnvelopeAtFill, TelephoneFill } from 'react-bootstrap-icons';
 
 const Contact = () => {
 	return (

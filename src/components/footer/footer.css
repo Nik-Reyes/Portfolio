@@ -24,9 +24,12 @@
 	margin-bottom: var(--mb-3);
 }
 
+.footer-link {
+	transition: color 200ms ease-in-out;
+}
+
 .footer-link:hover {
 	color: orangered;
-	transition: 0.3s;
 }
 
 .footer-list {

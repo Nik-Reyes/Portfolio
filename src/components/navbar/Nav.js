@@ -8,7 +8,7 @@ const Nav = () => {
 		<header className='Nav'>
 			<nav className='nav container'>
 				<a href='index.html' className='nav__logo'>
-					<ArrowClockwise />
+					<ArrowClockwise className='refresh-arrow' />
 				</a>
 				<div className={Toggle ? 'nav-content show-menu' : 'nav-content'}>
 					<ul className='nav-content-layout grid'>
@@ -32,14 +32,18 @@ const Nav = () => {
 
 						<li className='nav-item'>
 							<a href='#contact' className='nav__link'>
-								<i class='uil uil-message nav__icon'></i> Contact
+								<i className='uil uil-message nav__icon'></i> Contact
 							</a>
 						</li>
 					</ul>
 				</div>
 
 				<div className='nav__toggle' onClick={() => showNav(!Toggle)}>
-					<i class='uil uil-bars'></i>
+					<div className='hamburger'>
+						<span className='hamburger-line'></span>
+						<span className='hamburger-line'></span>
+						<span className='hamburger-line'></span>
+					</div>
 				</div>
 			</nav>
 		</header>

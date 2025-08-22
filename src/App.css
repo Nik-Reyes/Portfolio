@@ -41,6 +41,8 @@
 	--z-fixed: 100;
 	--z-modal: 1000;
 
+	--nav-height: calc(var(--nav-width) + 2.4rem);
+
 	/* typography */
 	@media screen and (max-width: 992px) {
 		:root {
@@ -55,7 +57,9 @@
 	}
 }
 
-* {
+*,
+*::after,
+*::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -104,10 +108,6 @@ img {
 	height: auto;
 }
 
-.section {
-	padding: 9.6rem 0 3.2rem;
-}
-
 .section-title {
 	font-size: var(--h1-size);
 	color: var(--title-color);
@@ -126,8 +126,6 @@ img {
 
 .container {
 	max-width: 96.8rem;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .grid {
@@ -153,33 +151,11 @@ img {
 }
 
 .button--flex {
-	display: inline-flex;
+	display: flex;
+	width: max-content;
 	align-items: center;
 }
 
-@media screen and (max-width: 992px) {
-	.container {
-		margin-left: var(--mb-5);
-		margin-right: var(--mb-5);
-	}
-}
-
-@media screen and (max-width: 768px) {
-	body {
-		margin: 0 0 4.8rem 0;
-	}
-
-	.section {
-		padding: 3.2rem 0 6.4rem;
-	}
-}
-
-@media screen and (max-width: 576px) {
-}
-
-@media screen and (max-width: 430px) {
-	.container {
-		margin-left: var(--mb-4);
-		margin-right: var(--mb-4);
-	}
+.section {
+	padding: 32px;
 }

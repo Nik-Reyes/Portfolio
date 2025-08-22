@@ -10,14 +10,10 @@ const App = () => {
 	return (
 		<>
 			<Nav />
-
 			<main className='main'>
 				<Content />
-
 				<About />
-
 				<Contact />
-
 				<Footer />
 			</main>
 		</>

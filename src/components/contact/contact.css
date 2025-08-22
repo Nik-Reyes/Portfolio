@@ -1,6 +1,4 @@
 .contact {
-	height: 100vh;
-	width: 100vw;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -8,7 +6,6 @@
 
 .contact-container {
 	grid-template-rows: repeat(1, max-content);
-	justify-content: center;
 	padding-bottom: 4.8rem;
 }
 
@@ -23,10 +20,6 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 3rem;
-}
-
-.contact-form {
-	width: 36rem;
 }
 
 .contact-card {
@@ -89,5 +82,11 @@
 
 	.contact-card {
 		width: 27rem;
+	}
+}
+
+@media screen and(min-width: 44rem) {
+	.contact.section {
+		background-color: yellow;
 	}
 }
