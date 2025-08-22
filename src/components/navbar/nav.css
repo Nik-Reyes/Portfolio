@@ -132,9 +132,3 @@ header {
 		display: block;
 	}
 }
-
-@media screen and(min-width: 44rem) {
-	.section {
-		background-color: yellow;
-	}
-}

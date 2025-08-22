@@ -159,3 +159,9 @@ img {
 .section {
 	padding: 32px;
 }
+
+@media screen and (min-width: 44.0625rem) {
+	.section {
+		height: 100vh;
+	}
+}

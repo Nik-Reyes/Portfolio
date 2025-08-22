@@ -73,7 +73,7 @@
 	transform: translate(0.4rem);
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 31.875rem) {
 	.contact-info {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -82,11 +82,5 @@
 
 	.contact-card {
 		width: 27rem;
-	}
-}
-
-@media screen and(min-width: 44rem) {
-	.contact.section {
-		background-color: yellow;
 	}
 }

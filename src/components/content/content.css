@@ -137,6 +137,7 @@
 	.grid-contents {
 		grid-template-columns: auto 1fr 350px;
 		column-gap: 32px;
+		place-content: center;
 	}
 
 	.content-data {
@@ -147,11 +148,6 @@
 	.content-subtitle {
 		padding-left: 8.5rem;
 		margin-bottom: var(--mb-4);
-	}
-
-	.content-subtitle::before {
-		width: 7rem;
-		top: 1.6rem;
 	}
 
 	.social-contents {

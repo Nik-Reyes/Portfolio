@@ -71,7 +71,7 @@
 	color: var(--title-color);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 62rem) {
 	.about-container {
 		grid-template-columns: 1fr;
 		row-gap: 4rem;
@@ -103,7 +103,7 @@
 	}
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 36rem) {
 	.about-info {
 		grid-template-columns: repeat(3, 1fr);
 	}
@@ -113,7 +113,7 @@
 	}
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 26.875rem) {
 	.about-info {
 		grid-template-columns: repeat(2, 1fr);
 	}
